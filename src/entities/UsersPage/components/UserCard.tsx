@@ -20,10 +20,7 @@ const UserCard: FC<IProps> = ({ id, img, title, price, rate }) => {
       <div className={style.card_main}>
         <div className={style.card_info}>
           <p>{title}</p>
-          <p>
-            {price}
-            {`\0x20BD`}
-          </p>
+          <p>{price}₽</p>
         </div>
         <div className={style.card_btn}>
           <p>{rate}</p>
