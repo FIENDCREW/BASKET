@@ -1,7 +1,19 @@
 .page_header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 60px;
-  background-color: rgba(199, 205, 14, 0.605);
+  background-color: #eaeaea;
+  max-width: 1100px;
+  margin: auto;
+  height: 60px;
+}
+
+.header_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #101010;
 }

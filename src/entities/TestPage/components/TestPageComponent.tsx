@@ -1,4 +1,3 @@
-import { countReset } from 'console';
 import React, { useEffect, useMemo, useState } from 'react';
 
 const TestPageComponent = () => {
@@ -7,15 +6,12 @@ const TestPageComponent = () => {
 
   const updataArray = useMemo(() => {
     return someArray.map((num) => {
-      console.log('Hello');
       return num + 10;
     });
   }, [someArray]);
 
   // componentDidMount
-  useEffect(() => {
-    console.log('Компонент отоборажен');
-  }, []);
+  useEffect(() => {}, []);
   // componentDidUpdate useEffect  ниже без завыисимости не используется
   // useEffect(() => {
   //   console.log('Компонент обновлен');
