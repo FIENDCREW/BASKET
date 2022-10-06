@@ -1,0 +1,30 @@
+.user_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  height: 407px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.card_main {
+  margin: 0px 22px;
+}
+.card_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_btn {
+  display: flex;
+  justify-content: space-between;
+}

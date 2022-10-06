@@ -1,0 +1,24 @@
+.sidebar_wrapper {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  padding: 5px 0;
+  background: linear-gradient(to top, rgba(36, 66, 2, 0.808), 20%, rgb(195, 255, 0));
+}
+
+.sidebar_menu {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding-left: 10px;
+  & item {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.active {
+  font-weight: 700;
+}
