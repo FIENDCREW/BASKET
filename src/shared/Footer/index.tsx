@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className={style.fooetr_column_two_lan}>
             <AiOutlineGlobal className={style.AiOutlineGlobal} />
-            <p>Рус</p>
+            <p className={style.p}>Рус</p>
             <p>Eng</p>
           </div>
         </div>
