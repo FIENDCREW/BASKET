@@ -1,5 +1,6 @@
-.page_footer {
+.footer_blok {
   max-width: 1100px;
+  min-width: 700px;
   min-height: 149px;
   background: #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -11,14 +12,64 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // margin: auto;
+  // padding-top: 34px;
 }
 
 .footer_text {
-  margin-left: 29px;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  color: #101010;
+  margin: 0px;
+  padding-left: 29px;
+}
+
+.footer_column_one {
+  padding-top: 34px;
+}
+
+.footer_column_ul {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.footer_column_li {
+  text-decoration: none;
+  color: black;
+}
+.footer_column_two {
+  display: flex;
+  flex-direction: column;
+  padding-top: 34px;
+  gap: 34px;
+}
+
+.fooetr_column_two_lan {
+  display: flex;
+}
+
+.AiOutlineGlobal {
+  width: 20px;
+  height: 20px;
+  margin-right: 17px;
+}
+
+.fooetr_column_two_lan p {
+  margin: 0px;
+  padding-right: 17px;
+}
+
+.fooetr_column_three a {
+  text-decoration: none;
   color: #101010;
 }
 

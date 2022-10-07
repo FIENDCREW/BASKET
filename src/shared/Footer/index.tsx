@@ -8,35 +8,37 @@ import style from './Footer.module.scss';
 const Footer = () => {
   const { pathname } = useLocation();
   return (
-    <div className={style.page_footer}>
+    <div className={style.footer_blok}>
       <div className={style.footer_menu}>
-        <div className={style.footer_text}>QPICK</div>
-        <div>
-          <ul className={style.sidebar_menu}>
+        <h2 className={style.footer_text}>QPICK</h2>
+        <div className={style.footer_column_one}>
+          <ul className={style.footer_column_ul}>
             {footerConfig.map((menuItem) => {
               const isActiveClassName = pathname.includes(menuItem.path) ? style.active : '';
               return (
                 <Link
                   key={menuItem.id}
                   to={menuItem.path}
-                  className={`${isActiveClassName} ${style.sidebar_menu_item}`}>
+                  className={`${isActiveClassName} ${style.footer_column_li}`}>
                   <li>{menuItem.name}</li>
                 </Link>
               );
             })}
           </ul>
         </div>
-        <div>
-          <Link to="/">
-            <p>Условия сервиса</p>
-          </Link>
+        <div className={style.footer_column_two}>
           <div>
-            <AiOutlineGlobal />
+            <Link to="/terms_of_service" className={style.footer_column_li}>
+              Условия сервиса
+            </Link>
+          </div>
+          <div className={style.fooetr_column_two_lan}>
+            <AiOutlineGlobal className={style.AiOutlineGlobal} />
             <p>Рус</p>
             <p>Eng</p>
           </div>
         </div>
-        <div>
+        <div className={style.fooetr_column_three}>
           <a href="https://vk.com/">
             <ImVk className={style.ImVk} />
           </a>
